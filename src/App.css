@@ -1,0 +1,32 @@
+/* src/App.css */
+.App {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  .box{
+    width: 600px;
+    height: 400px;
+  }
+  .slick-slide img {
+    margin: 0 auto;
+    border-radius: 8px;
+    background-size: cover;
+    box-shadow:2px 3px 3px  rgba(84, 84, 84, 0.968);
+  }
+  .slick-next{
+    right: 100px !important;
+    top: 500px !important;
+  }
+  .slick-prev{
+    left: 100px !important;
+    top: 500px !important;
+  }
+  .slick-dots li button{
+    background-color: ghostwhite !important;
+  }
+  
