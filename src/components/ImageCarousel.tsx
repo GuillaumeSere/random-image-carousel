@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { IoIosRefresh } from "react-icons/io";
 
 const ImageCarousel: React.FC = () => {
   const [images, setImages] = useState<string[]>([]);
@@ -56,14 +57,23 @@ const ImageCarousel: React.FC = () => {
       ]
   };
 
+  const handleRefresh = () => {
+    window.location.reload();
+  };
+
   return (
-    <Slider {...settings}>
-      {images.map((url, index) => (
-        <div className="box" key={index}>
-          <img src={url} alt={`Slide ${index}`} style={{ width: '500px', height: 'auto' }} />
-        </div>
-      ))}
-    </Slider>
+    <>
+      <Slider {...settings}>
+        {images.map((url, index) => (
+          <div className="box" key={index}>
+            <img src={url} alt={`Slide ${index}`} style={{ width: '500px', height: 'auto' }} />
+          </div>
+        ))}
+      </Slider>
+      <button className="btn" onClick={handleRefresh}>
+      <IoIosRefresh className='icon' />
+      </button>
+    </>
   );
 };
 
