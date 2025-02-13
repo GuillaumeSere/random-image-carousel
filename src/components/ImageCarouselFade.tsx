@@ -24,8 +24,8 @@ const ImageCarouselFade: React.FC = () => {
   return (
     < >
         <div className="box-image">
-          <img src={images[0]} style={{ width: '300px', height: 'auto' }} />
-          <img src={images[0]} style={{ width: '300px', height: 'auto' }} />
+          <img className="img1" src={images[0]} style={{ width: '300px', height: 'auto' }} />
+          <img className="img2" src={images[0]} style={{ width: '300px', height: 'auto' }} />
         </div>
     </>
   );
