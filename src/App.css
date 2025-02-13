@@ -12,11 +12,19 @@
     width: 600px;
     height: 400px;
   }
+  .box-image{
+    display: flex;
+    justify-content: space-around;
+  }
+  .box-image img{
+    border-radius: 15px;
+    box-shadow:2px 3px 3px  rgba(173, 173, 173, 0.968);
+  }
   .slick-slide img {
     margin: 0 auto;
     border-radius: 8px;
     background-size: cover;
-    box-shadow:2px 3px 3px  rgba(84, 84, 84, 0.968);
+    box-shadow:2px 3px 3px  rgba(173, 173, 173, 0.968);
   }
   .slick-next{
     right: 100px !important;
